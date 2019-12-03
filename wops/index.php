@@ -53,9 +53,26 @@ spl_autoload_register("App\\Loader::autoLoader");
 
 
 // 观察者模式
-echo "start\n";
-$event = new \App\Design\Observe\Event();
-$event->addObserve(new \App\Design\Observe\OrderObserve());
-$event->addObserve(new \App\Design\Observe\AdminObserve());
-$event->trigger();
+//echo "start\n";
+//$event = new \App\Design\Observe\Event();
+//$event->addObserve(new \App\Design\Observe\OrderObserve());
+//$event->addObserve(new \App\Design\Observe\AdminObserve());
+//$event->trigger();
 
+// 装饰器模式
+//class Page
+//{
+//    function index()
+//    {
+//
+//        echo "dsdsdsds";
+//    }
+//}
+//
+//$page = new Page();
+//$decorate = new \App\Design\Decorate\Decorate();
+//$decorate->addDecorate(new \App\Design\Decorate\numDecorate(3));
+//$decorate->addDecorate(new \App\Design\Decorate\wordDecorate("i have a dream!"));
+//$decorate->actionBefore();
+//$page->index();
+//$decorate->actionAfter();
